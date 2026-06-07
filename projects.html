@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Projects | Anisha NK</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#f8fafc,#eef2ff);
+}
+
+/* NAVBAR */
+
+nav{
+    width:100%;
+    background:linear-gradient(
+        90deg,
+        #111827,
+        #312e81,
+        #0f766e
+    );
+
+    padding:20px 5%;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    color:white;
+    font-size:30px;
+    font-weight:700;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:30px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+}
+
+nav a:hover{
+    color:#67e8f9;
+}
+
+/* HERO */
+
+.projects-hero{
+    text-align:center;
+    padding:100px 5% 60px;
+}
+
+.projects-hero h1{
+    font-size:55px;
+    color:#111827;
+    margin-bottom:20px;
+}
+
+.projects-hero span{
+    background:linear-gradient(
+        90deg,
+        #7c3aed,
+        #06b6d4
+    );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.projects-hero p{
+    color:#64748b;
+    max-width:750px;
+    margin:auto;
+    line-height:1.8;
+}
+
+/* PROJECTS */
+
+.projects{
+    padding:0 5% 80px;
+}
+
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+}
+
+.project-card{
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    border:1px solid rgba(124,58,237,.12);
+
+    box-shadow:
+    0 8px 25px rgba(15,23,42,.08);
+
+    transition:.35s;
+}
+
+.project-card:hover{
+    transform:translateY(-8px);
+}
+
+.project-card:nth-child(1):hover{
+    border-color:#7c3aed;
+    background:rgba(124,58,237,.02);
+}
+
+.project-card:nth-child(2):hover{
+    border-color:#06b6d4;
+    background:rgba(6,182,212,.02);
+}
+
+.project-card:nth-child(3):hover{
+    border-color:#0f766e;
+    background:rgba(15,118,110,.02);
+}
+
+.project-image{
+    height:200px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:70px;
+
+    background:linear-gradient(
+        135deg,
+        rgba(124,58,237,.08),
+        rgba(6,182,212,.08)
+    );
+}
+
+.project-content{
+    padding:25px;
+}
+
+.project-content h3{
+    color:#111827;
+    margin-bottom:12px;
+}
+
+.project-content p{
+    color:#64748b;
+    line-height:1.8;
+}
+
+.tech{
+    margin-top:15px;
+}
+
+.tech span{
+    display:inline-block;
+
+    background:#eef2ff;
+
+    color:#312e81;
+
+    padding:8px 12px;
+
+    border-radius:30px;
+
+    font-size:13px;
+
+    margin:4px;
+}
+
+.btn{
+    display:inline-block;
+
+    margin-top:20px;
+
+    text-decoration:none;
+
+    padding:12px 20px;
+
+    border-radius:30px;
+
+    color:white;
+
+    background:linear-gradient(
+        135deg,
+        #7c3aed,
+        #06b6d4
+    );
+}
+
+/* FOOTER */
+
+footer{
+    background:linear-gradient(
+        90deg,
+        #111827,
+        #312e81
+    );
+
+    color:white;
+
+    text-align:center;
+
+    padding:25px;
+}
+
+@media(max-width:900px){
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .projects-hero h1{
+        font-size:40px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">Anisha NK</div>
+
+<ul>
+<li><a href="home.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="skills.html">Skills</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+</nav>
+
+<section class="projects-hero">
+
+<h1>My <span>Projects</span></h1>
+
+<p>
+A showcase of projects that demonstrate my technical skills,
+problem-solving abilities, and passion for software development.
+</p>
+
+</section>
+
+<section class="projects">
+
+<div class="project-grid">
+
+<div class="project-card">
+
+<div class="project-image">
+💻
+</div>
+
+<div class="project-content">
+
+<h3>Portfolio Website</h3>
+
+<p>
+A personal portfolio website designed to showcase my skills,
+projects, achievements, and career journey.
+</p>
+
+<div class="tech">
+<span>HTML</span>
+<span>CSS</span>
+<span>JavaScript</span>
+</div>
+
+<a href="#" class="btn">View Project</a>
+
+</div>
+</div>
+
+<div class="project-card">
+
+<div class="project-image">
+📊
+</div>
+
+<div class="project-content">
+
+<h3>Student Management System</h3>
+
+<p>
+A database-driven application for managing student records,
+attendance, and academic information.
+</p>
+
+<div class="tech">
+<span>Java</span>
+<span>SQL</span>
+</div>
+
+<a href="#" class="btn">View Project</a>
+
+</div>
+</div>
+
+<div class="project-card">
+
+<div class="project-image">
+🛒
+</div>
+
+<div class="project-content">
+
+<h3>E-Commerce Website</h3>
+
+<p>
+A responsive online shopping platform featuring product listings,
+cart functionality, and modern UI design.
+</p>
+
+<div class="tech">
+<span>HTML</span>
+<span>CSS</span>
+<span>JavaScript</span>
+</div>
+
+<a href="#" class="btn">View Project</a>
+
+</div>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 Anisha NK | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

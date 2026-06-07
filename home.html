@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anisha NK | Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:linear-gradient(135deg,#f8fafc,#eef2ff);
+    overflow-x:hidden;
+}
+
+/* ================= NAVBAR ================= */
+
+nav{
+    width:100%;
+    background:linear-gradient(
+        90deg,
+        #111827,
+        #312e81,
+        #0f766e
+    );
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 5px 20px rgba(0,0,0,0.15);
+}
+
+.logo{
+    color:white;
+    font-size:30px;
+    font-weight:700;
+    letter-spacing:1px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:30px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    font-size:17px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#67e8f9;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 10%;
+
+    background:
+    radial-gradient(circle at top left,#dbeafe 0%,transparent 40%),
+    radial-gradient(circle at bottom right,#ccfbf1 0%,transparent 40%);
+}
+
+.hero-text{
+    width:55%;
+}
+
+.hero-text h3{
+    color:#1346b3;
+    font-size:26px;
+    margin-bottom:10px;
+}
+
+.hero-text h2{
+    font-size:45px;
+    color:#111827;
+    margin-bottom:10px;
+}
+
+.hero-text span{
+    background:linear-gradient(
+        90deg,
+        #7c3aed,
+        #06b6d4
+    );
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.hero-text p{
+    font-family:'Poppins',sans-serif;
+    color:#475569;
+    font-size:14px;
+    line-height:1.9;
+    margin-top:20px;
+    text-align:justify;
+    max-height:600px;
+    overflow-y:auto;
+    padding-right:25px;
+}
+
+.hero-text p::-webkit-scrollbar{
+    width:6px;
+}
+
+.hero-text p::-webkit-scrollbar-thumb{
+    background:#7c3aed;
+    border-radius:10px;
+}
+
+.buttons{
+    margin-top:35px;
+}
+
+.btn{
+    text-decoration:none;
+    display:inline-block;
+    padding:15px 30px;
+    border-radius:30px;
+    font-weight:600;
+    margin-right:15px;
+    transition:.3s;
+}
+
+.contact-btn{
+    background:linear-gradient(
+        135deg,
+        #7c3aed,
+        #06b6d4
+    );
+    color:white;
+    box-shadow:0 8px 20px rgba(124,58,237,.3);
+}
+
+.contact-btn:hover{
+    transform:translateY(-3px);
+}
+
+.about-btn{
+    border:2px solid #7c3aed;
+    color:#7c3aed;
+    background:white;
+}
+
+.about-btn:hover{
+    background:#7c3aed;
+    color:white;
+}
+
+/* ================= PROFILE ================= */
+
+.profile{
+    width:380px;
+    height:380px;
+    border-radius:50%;
+    overflow:hidden;
+    border:8px solid white;
+
+    box-shadow:
+    0 0 25px rgba(124,58,237,.35),
+    0 0 50px rgba(6,182,212,.25);
+}
+
+.profile img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center top;
+    transform:scale(1.15);
+}
+
+/* ================= STATS ================= */
+
+.stats{
+    padding:80px 4%;
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+/* ===== STATS CARDS ===== */
+
+.stat-card{
+    background:#ffffff;
+    border-radius:20px;
+    padding:35px;
+    width:260px;
+    text-align:center;
+    transition:all .35s ease;
+    box-shadow:0 8px 25px rgba(15,23,42,.08);
+}
+
+/* Visible borders before hover */
+
+.stat-card:nth-child(1){
+    border:1.5px solid rgba(124,58,237,.25);
+}
+
+.stat-card:nth-child(2){
+    border:1.5px solid rgba(6,182,212,.25);
+}
+
+.stat-card:nth-child(3){
+    border:1.5px solid rgba(15,118,110,.25);
+}
+
+/* Hover effect */
+
+.stat-card:nth-child(1):hover{
+    background:rgba(124,58,237,.04);
+    border-color:#7c3aed;
+    box-shadow:0 15px 35px rgba(124,58,237,.12);
+}
+
+.stat-card:nth-child(2):hover{
+    background:rgba(6,182,212,.04);
+    border-color:#06b6d4;
+    box-shadow:0 15px 35px rgba(6,182,212,.12);
+}
+
+.stat-card:nth-child(3):hover{
+    background:rgba(15,118,110,.04);
+    border-color:#0f766e;
+    box-shadow:0 15px 35px rgba(15,118,110,.12);
+}
+
+.stat-card:hover{
+    transform:translateY(-6px);
+}
+
+.stat-card:nth-child(1):hover{
+    background:rgba(124,58,237,.04);
+    box-shadow:0 15px 35px rgba(124,58,237,.12);
+}
+
+.stat-card:nth-child(2):hover{
+    background:rgba(6,182,212,.04);
+    box-shadow:0 15px 35px rgba(6,182,212,.12);
+}
+
+.stat-card:nth-child(3):hover{
+    background:rgba(15,118,110,.04);
+    box-shadow:0 15px 35px rgba(15,118,110,.12);
+}
+
+.highlight-card{
+    background:rgba(255,255,255,0.65);
+    backdrop-filter:blur(15px);
+
+    padding:30px;
+    border-radius:24px;
+
+    border:1px solid rgba(255,255,255,.4);
+
+    box-shadow:
+    0 8px 25px rgba(0,0,0,.05);
+
+    transition:.35s;
+}
+
+.highlight-card:nth-child(1){
+    border-bottom:4px solid #7c3aed;
+}
+
+.highlight-card:nth-child(2){
+    border-bottom:4px solid #06b6d4;
+}
+
+.highlight-card:nth-child(3){
+    border-bottom:4px solid #0f766e;
+}
+
+.highlight-card:hover{
+    transform:translateY(-8px);
+}
+
+.highlight-card:nth-child(1):hover{
+    background:rgba(124,58,237,.05);
+}
+
+.highlight-card:nth-child(2):hover{
+    background:rgba(6,182,212,.05);
+}
+
+.highlight-card:nth-child(3):hover{
+    background:rgba(15,118,110,.05);
+}
+
+.highlight-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 15px 35px rgba(124,58,237,.08);
+    background:linear-gradient(
+        135deg,
+        rgba(124,58,237,.03),
+        rgba(255,255,255,1)
+    );
+}
+
+.highlight-card:nth-child(2):hover{
+    box-shadow:0 15px 35px rgba(6,182,212,.08);
+
+    background:linear-gradient(
+        135deg,
+        rgba(6,182,212,.03),
+        rgba(255,255,255,1)
+    );
+}
+
+.highlight-card:nth-child(3):hover{
+    box-shadow:0 15px 35px rgba(15,118,110,.08);
+
+    background:linear-gradient(
+        135deg,
+        rgba(15,118,110,.03),
+        rgba(255,255,255,1)
+    );
+}
+
+.highlight-card h3{
+    color:#111827;
+    margin-bottom:15px;
+}
+
+.highlight-card p{
+    color:#64748b;
+    line-height:1.8;
+}
+
+/* ================= EXTRA SECTION ================= */
+
+.highlights{
+    padding:80px 4%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:50px;
+    color:#111827;
+}
+
+.highlight-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.highlight-card{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.highlight-card:hover{
+    transform:translateY(-8px);
+}
+
+.highlight-card h3{
+    color:#7c3aed;
+    margin-bottom:15px;
+}
+
+.highlight-card p{
+    color:#64748b;
+    line-height:1.7;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:linear-gradient(
+        90deg,
+        #111827,
+        #312e81
+    );
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:900px){
+
+nav{
+    width:100%;
+    background:linear-gradient(
+        90deg,
+        #111827,
+        #312e81,
+        #0f766e
+    );
+
+    padding:20px 4%;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 5px 20px rgba(0,0,0,0.15);
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 4%;
+
+    background:
+    radial-gradient(circle at top left,#dbeafe 0%,transparent 40%),
+    radial-gradient(circle at bottom right,#ccfbf1 0%,transparent 40%);
+}
+
+.hero-text{
+    width:100%;
+}
+
+.hero-text h1{
+    font-size:48px;
+}
+
+.profile{
+    width:260px;
+    height:260px;
+    margin-bottom:40px;
+}
+
+.btn{
+    margin-top:10px;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">Anisha NK</div>
+
+<ul>
+<li><a href="home.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="skills.html">Skills</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<div class="hero-text">
+<br>
+<br>
+<h3>Hello, I'm</h3>
+
+<h2>Anisha <span>NK</span></h2>
+
+<p>
+I am a passionate and dedicated Computer Science student with a strong enthusiasm for technology, software development, and continuous learning. As an aspiring Full Stack Developer, I enjoy designing and developing responsive, user-friendly, and efficient web applications that provide meaningful solutions to real-world problems. My journey in technology is driven by curiosity, creativity, and a desire to transform ideas into functional digital experiences.
+
+I have built a solid foundation in programming languages such as Java, Python, and SQL, along with web technologies including HTML, CSS, JavaScript, and modern development practices. I am interested in both front-end and back-end development, which allows me to understand the complete software development lifecycle and create end-to-end applications. I enjoy crafting visually appealing user interfaces while also working with databases, server-side logic, and application functionality to ensure seamless performance.
+
+Beyond technical skills, I possess strong problem-solving abilities, analytical thinking, and a willingness to take on new challenges. I enjoy exploring emerging technologies, learning new frameworks and tools, and staying updated with industry trends. Every project I work on helps me strengthen my understanding of software development principles, improve my coding practices, and gain valuable hands-on experience.
+
+Throughout my academic journey, I have actively worked on projects that have enhanced my ability to collaborate, think critically, and develop practical solutions. I believe that technology has the power to make a positive impact on people's lives, and I am motivated to contribute by creating innovative, reliable, and user-centric applications. Whether it is developing a website, designing a database, writing efficient code, or solving complex programming challenges, I approach every task with dedication and attention to detail.
+
+My goal is to continuously grow as a developer, expand my technical expertise, and build impactful software that combines functionality, performance, and excellent user experience. I am always eager to learn, adapt, and embrace new opportunities that help me evolve both personally and professionally. Welcome to my portfolio, where I showcase my skills, projects, achievements, and ongoing journey in the world of technology and software development.
+</p>
+
+<div class="buttons">
+
+<a href="contact.html" class="btn contact-btn">
+Contact Me
+</a>
+
+<a href="about.html" class="btn about-btn">
+Learn More
+</a>
+
+</div>
+
+</div>
+
+<div class="profile">
+<img src="profile.jpg" alt="Anisha">
+</div>
+
+</section>
+
+<section class="stats">
+
+<div class="stat-card">
+<h2>5+</h2>
+<p>Technologies Learned</p>
+</div>
+
+<div class="stat-card">
+<h2>3+</h2>
+<p>Projects Completed</p>
+</div>
+
+<div class="stat-card">
+<h2>100%</h2>
+<p>Learning & Growth</p>
+</div>
+
+</section>
+
+<section class="highlights">
+
+<h2 style="color: #07322f;font-size: 40px;" class="section-title">Why Choose Me?</h2>
+
+<div class="highlight-grid">
+
+<div class="highlight-card">
+<h3>Web Development</h3>
+<p>
+Passionate about creating responsive and user-friendly websites
+using modern web technologies.
+</p>
+</div>
+
+<div class="highlight-card">
+<h3>Problem Solving</h3>
+<p>
+Strong analytical thinking and problem-solving skills gained
+through academic and project experience.
+</p>
+</div>
+
+<div class="highlight-card">
+<h3>Continuous Learning</h3>
+<p>
+Always eager to learn new tools, frameworks, and technologies
+to improve development skills.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 Anisha NK | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About | Anisha NK</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:linear-gradient(135deg,#f8fafc,#eef2ff);
+    overflow-x:hidden;
+}
+
+/* ================= NAVBAR ================= */
+
+nav{
+    width:100%;
+    background:linear-gradient(
+        90deg,
+        #111827,
+        #312e81,
+        #0f766e
+    );
+
+    padding:20px 5%;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+
+.logo{
+    color:white;
+    font-size:30px;
+    font-weight:700;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:30px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#67e8f9;
+}
+
+/* ================= HERO ================= */
+
+.about-hero{
+    padding:100px 5% 70px;
+    text-align:center;
+}
+
+.about-hero h1{
+    font-size:55px;
+    color:#111827;
+    margin-bottom:20px;
+}
+
+.about-hero span{
+    background:linear-gradient(
+        90deg,
+        #7c3aed,
+        #06b6d4
+    );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.about-hero p{
+    max-width:850px;
+    margin:auto;
+    color:#64748b;
+    line-height:1.9;
+    font-size:16px;
+}
+
+/* ================= CARDS ================= */
+
+.about-container{
+    padding:0 5% 80px;
+}
+
+.about-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.about-card{
+    background:white;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    border:1px solid rgba(124,58,237,.15);
+
+    box-shadow:
+    0 8px 25px rgba(15,23,42,.08);
+
+    transition:.35s;
+}
+
+.about-card:hover{
+    transform:translateY(-6px);
+}
+
+.about-card:nth-child(1):hover{
+    background:rgba(124,58,237,.03);
+    border-color:#7c3aed;
+}
+
+.about-card:nth-child(2):hover{
+    background:rgba(6,182,212,.03);
+    border-color:#06b6d4;
+}
+
+.about-card:nth-child(3):hover{
+    background:rgba(15,118,110,.03);
+    border-color:#0f766e;
+}
+
+.about-card h3{
+    color:#111827;
+    margin-bottom:15px;
+}
+
+.about-card p{
+    color:#64748b;
+    line-height:1.8;
+}
+
+/* ================= CAREER SECTION ================= */
+
+.career{
+    padding:20px 5% 80px;
+}
+
+.career-card{
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    border:1px solid rgba(124,58,237,.15);
+
+    box-shadow:
+    0 8px 25px rgba(15,23,42,.08);
+
+    transition:.35s;
+}
+
+.career-card:hover{
+    background:rgba(124,58,237,.03);
+    border-color:#7c3aed;
+}
+
+.career-card h2{
+    margin-bottom:20px;
+    color:#111827;
+}
+
+.career-card p{
+    color:#64748b;
+    line-height:1.9;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:linear-gradient(
+        90deg,
+        #111827,
+        #312e81
+    );
+
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:900px){
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .about-hero h1{
+        font-size:40px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">Anisha NK</div>
+
+<ul>
+<li><a href="home.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="skills.html">Skills</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+</nav>
+
+<section class="about-hero">
+
+<h1>About <span>Me</span></h1>
+
+<p>
+Welcome to my portfolio. I am a passionate Computer Science student and aspiring Full Stack Developer who enjoys creating responsive web applications, learning new technologies, and solving real-world problems through software development. This page provides an overview of my journey, skills, interests, and career aspirations.
+</p>
+
+</section>
+
+<section class="about-container">
+
+<div class="about-grid">
+
+<div class="about-card">
+<h3>Education</h3>
+<p>
+B tech<br>
+Computer Science Engineering <br>
+Amrita Vishwa Vidyapeetham <br>
+Coimbatore
+</p>
+</div>
+
+<div class="about-card">
+<h3>Areas of Interest</h3>
+<p>
+• Full Stack Web Development<br>
+• Database Management<br>
+• UI/UX Design<br>
+• Software Development<br>
+• Problem Solving<br>
+</p>
+</div>
+
+<div class="about-card">
+<h3>Interests & Hobbies</h3>
+<p>
+• Learning New Technologies<br>
+• Artificial Intelligence & Machine Learning<br>
+• Open Source Projects<br>
+• Cybersecurity Basics<br>
+• Listening to Music<br>
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="career">
+
+<div class="career-card">
+
+<h2>Career Objective</h2>
+
+<p>
+Career Objective
+
+As a passionate and dedicated Computer Science student, my goal is to build a successful career in the field of software development and web technologies. I am eager to apply my technical knowledge, problem-solving abilities, and creativity to develop innovative and user-friendly solutions that address real-world challenges. I continuously strive to enhance my skills by learning emerging technologies, exploring modern development practices, and gaining practical experience through projects and collaboration.
+
+I aspire to work in a dynamic and growth-oriented environment where I can contribute to meaningful projects, expand my knowledge, and grow both professionally and personally. My objective is to become a skilled Full Stack Developer capable of designing, developing, and maintaining high-quality applications while staying updated with the latest industry trends and technological advancements.
+
+Through dedication, continuous learning, and a strong commitment to excellence, I aim to make a positive impact in the technology sector and contribute effectively to the success of the organization I work with.
+
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Anisha NK | All Rights Reserved</p>
+
+</footer>
+
+</body>
+</html>
